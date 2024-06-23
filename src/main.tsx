@@ -5,8 +5,7 @@ import "./index.css";
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
 
 // this manifest is used temporarily for development purposes
-const manifestUrl =
-  "https://github.com/DevAnsar/my-twa/tonconnect-manifest.json";
+const manifestUrl = "https://my-twa-xi.vercel.app/tonconnect-manifest.json";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

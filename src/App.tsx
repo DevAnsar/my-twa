@@ -9,27 +9,27 @@ function App() {
   const { value, address, sendIncrement } = useCounterContract();
   return (
     <div className="App">
-      <div className="Container">
+      <div className="container">
         <TonConnectButton />
 
-        <div className="Card">
-          <b>Counter Address</b>
-          <div className="Hint">{address?.slice(0, 30) + "..."}</div>
+        <div className="card">
+          <b>Contract Address</b>
+          <div className="Hint">{address}</div>
         </div>
 
-        <div className="Card">
+        <div className="card">
           <b>Counter Value</b>
           <div>{value ?? "Loading..."}</div>
         </div>
 
-        <a
+        <button
           className={`Button ${connected ? "Active" : "Disabled"}`}
           onClick={() => {
             sendIncrement();
           }}
         >
           Increment
-        </a>
+        </button>
       </div>
     </div>
   );
